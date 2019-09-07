@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -58,8 +56,9 @@
 		<!-- Begin page -->
 		<header class="am-topbar am-topbar-fixed-top">		
 			<div class="am-topbar-left am-hide-sm-only">
-                <a href="UserIndex.html" class="logo"><span>Energy X</span><i class="zmdi zmdi-layers"></i></a>
-            </div>
+				<a href="UserIndex.html" class="logo"><img src="../assets/img/icon-rect.jpg"
+						style="width: auto; height: auto; max-width: 100%; max-height: 100%" /></a>
+			</div>
 	
 			<div class="contain">
 				<ul class="am-nav am-navbar-nav am-navbar-left">
@@ -75,7 +74,7 @@
                             
                         </form>
                     </li>
-                    <li><h4><a href="../jsp/login.html" style="color:">&nbsp;&nbsp;&nbsp;退出登录</a></h4></li>
+                    <li><h4><a href="../jsp/login.html" style="color:">&nbsp;&nbsp;&nbsp;Log out</a></h4></li>
 				</ul>
 			</div>
 		</header>
@@ -114,31 +113,43 @@
 	                    </div>
 	                    <!-- End User -->
 	            
-						 <ul class="am-list admin-sidebar-list">
-						    <li><a href="UserIndex.html"><span class="am-icon-home"></span> 首页</a></li>
-						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-table"></span> 实时数据 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
-						        <li><a href="realtime.html">总用电数据</a></li>
-						        <li><a href="Appliance.html">各用电器数据</a></li>
-						      </ul>
-						    </li>
-						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="am-icon-line-chart" aria-hidden="true"></i> 用电报告 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
-						        <li><a href="ReportDay.html" class="am-cf"> 日度报告</span></a></li>
-						        <li><a href="ReportMon.html" class="am-cf"> 月度报告</span></a></li>
-						        <li><a href="ReportYear.html" class="am-cf"> 年度报告</span></a></li>
-						      </ul>
-						    </li>
-						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> 节能策略 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
-						        <li><a href="Suggestion.html" class="am-cf">用电建议 </a></li>
-						        <li><a href="PriceStrategy.html">电价策略选择</a></li>   
-						      </ul>
-						    </li>
-						  </ul>
+						<ul class="am-list admin-sidebar-list">
+							<li><a href="UserIndex.html"><span class="am-icon-home"></span> Home Page</a></li>
+							<li class="admin-parent">
+								<a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span
+										class="am-icon-table"></span> Dashboard <span
+										class="am-icon-angle-right am-fr am-margin-right"></span></a>
+								<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
+									<li><a href="FacilityDashboard.html" class="am-cf"> Facility Dashboard</span></a></li>
+									<li><a href="DailyDashboard.html" class="am-cf"> Daily Dashboard</span></a></li>
+								</ul>
+							</li>
+							<li class="admin-parent">
+								<a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="am-icon-line-chart"
+										aria-hidden="true"></i> Peer Evaluation <span
+										class="am-icon-angle-right am-fr am-margin-right"></span></a>
+								<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
+									<li><a href="NeighborCompare.html" class="am-cf"> Neighbour Evaluation</span></a></li>
+									<li><a href="SelfEvaluation.html" class="am-cf"> Self-evaluation</span></a></li>
+								</ul>
+							</li>
+							<li class="admin-parent">
+								<a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span
+										class="am-icon-file"></span> Strategy Recommendation <span
+										class="am-icon-angle-right am-fr am-margin-right"></span></a>
+								<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
+									<li><a href="Suggestion.html" class="am-cf">Water Usage Strategy </a></li>
+								</ul>
+							</li>
+							<li class="admin-parent">
+									<a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span
+											class="am-icon-star"></span> Drop Collector <span
+											class="am-icon-angle-right am-fr am-margin-right"></span></a>
+									<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
+										<li><a href="Suggestion.html" class="am-cf">Drop Collector </a></li>
+									</ul>
+							</li>
+						</ul>
 				</div>
 				  </div>
 				  <!-- sidebar end -->
@@ -156,9 +167,9 @@
 		<div class="content-page">
 			<!-- Start content -->
 			<div class="content">
+				<div class="am-g"><br/><br/><br/><br/></div>
 				<div class="am-g">
-					
-					<div class="am-u-md-8">
+					<div class="am-u-md-4">
 						<!-- 大数据面积图  -->
 						<div class="card-box">
 								<h4 class="header-title m-t-0 m-b-30">Water Usage Rankings</h4>
@@ -248,40 +259,10 @@
                                     </div>
 							</div>
 			         </div>
-					<div class="am-u-md-4">
+					<div class="am-u-md-8">
 						<!-- 大数据面积图  -->
 						<div class="card-box">
-			           <table class="am-table   am-text-nowrap" style="height: 465px;">
-                                            <thead>
-                                            	<tr>
-                                                <th>最新消息</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                               <td>
-                                               	<p class="text-info" align="center">用户134****1098选择了实时电价A套餐</p> 
-                                               </td>         
-                                               </tr>
-				                                <tr>
-                                               <td><p class="text-info" align="center">用户187****1918选择了分时电价B套餐</p> </td>         
-                                               </tr>
-			                                    <tr>
-                                               <td> <p class="text-info" align="center">用户157****6403选择了阶梯电价套餐</p> </td>         
-                                               </tr>
-			                                    <tr>
-                                               <td> <p class="text-info" align="center">用户170****3301选择了阶梯电价套餐</p> </td>         
-                                               </tr>
-                                               <tr>
-                                               <td> <p class="text-info" align="center">用户150****5038选择了实时电价C套餐</p> </td>         
-                                               </tr>
-                                               <tr>
-                                               <td> <p class="text-info" align="center">用户155****4658选择了分时电价A套餐</p> </td>         
-                                               </tr>
-			                                 </tbody>
-			                                 </table>
-			   
-			
+							<div id="neighbourComparing" style="height: 550px;"></div>
 						</div>
 					</div>
 				
