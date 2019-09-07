@@ -74,73 +74,72 @@
 		</div>
 		<!-- End User -->
 
-		 <ul class="am-list admin-sidebar-list">
-						    <li><a href="UserIndex.html"><span class="am-icon-home"></span> 首页</a></li>
-						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-table"></span> 实时数据 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
-						        <li><a href="realtime.html">总用电数据</a></li>
-						        <li><a href="Appliance.html">各用电器数据</a></li>
-						      </ul>
-						    </li>
-						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="am-icon-line-chart" aria-hidden="true"></i> 用电报告 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
-						        <li><a href="ReportDay.html" class="am-cf"> 日度报告</span></a></li>
-						        <li><a href="ReportMon.html" class="am-cf"> 月度报告</span></a></li>
-						        <li><a href="ReportYear.html" class="am-cf"> 年度报告</span></a></li>
-						      </ul>
-						    </li>
-						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> 节能策略 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
-						        <li><a href="Suggestion.html" class="am-cf">用电建议 </a></li>
-						        <li><a href="PriceStrategy.html">电价策略选择</a></li>   
-						      </ul>
-						    </li>
-						  </ul>
+		<ul class="am-list admin-sidebar-list">
+			<li><a href="UserIndex.html"><span class="am-icon-home"></span> Home Page</a></li>
+			<li class="admin-parent">
+				<a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-table"></span> Dashboard <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+				<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
+					<li><a href="FacilityDashboard.html" class="am-cf"> Facility Dashboard</span></a></li>
+					<li><a href="DailyDashboard.html" class="am-cf"> Daily Dashboard</span></a></li>
+				</ul>
+			</li>
+			<li class="admin-parent">
+				<a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="am-icon-line-chart" aria-hidden="true"></i> Peer Evaluation <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+				<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
+				<li><a href="ReportDay.html" class="am-cf"> Neighbour Evaluation</span></a></li>
+				<li><a href="ReportMon.html" class="am-cf"> Self-evaluation</span></a></li>
+				<li><a href="ReportYear.html" class="am-cf"> Yearly Evaluation</span></a></li>
+				</ul>
+			</li>
+			<li class="admin-parent">
+				<a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> Water Strategy Recommendation <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+				<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
+				<li><a href="Suggestion.html" class="am-cf">Water Usage Strategy </a></li>
+				<li><a href="PriceStrategy.html">Water PriceStrategy</a></li>   
+				</ul>
+			</li>
+		</ul>
 	</div>
 </div>
 
 	<div class="content-page">
 		<!-- Start content -->
 		<div class="content">
+			<div class="am-g"><br/><br/><br/><br/></div>
 
 			<div class="am-g">
-
 				<div class="am-u-md-8">
-
 					<div class="card-box">
-						<h4 class="header-title m-t-0 m-b-30" style="text-align: left;">2017.8电费账单对比</h4><br />
+						<h4 class="header-title m-t-0 m-b-30" style="text-align: left;">Bill Comparison</h4><br />
 
 						<div style="float:left;"><img src="../assets/img/bill.png" alt=""></div>
 						<table class="am-table1">
 							<thead>
 								<tr>
 									<th></th>
-									<th>本月</th>
-									<th>上月</th>
-									<th>差异</th>
+									<th>This Month</th>
+									<th>Last Month</th>
+									<th>Difference</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>天气</td>
+									<td>Weather</td>
 									<td>28℃</td>
 									<td>31℃</td>
-									<td>下降3℃</td>
+									<td>Down3℃</td>
 								</tr>
 								<tr>
-									<td>用电量</td>
-									<td>245.08kW·h</td>
-									<td>357.71kW·h</td>
-									<td>下降112.6kW·h</td>
+									<td>Comsumption</td>
+									<td>245.08t</td>
+									<td>357.71t</td>
+									<td>Down112.6t</td>
 								</tr>
 								<tr>
-									<td>账单区间</td>
+									<td>Difference Range</td>
 									<td>31</td>
 									<td>31</td>
-									<td>相同</td>
+									<td>Same</td>
 								</tr>
 							</tbody>
 						</table>
@@ -150,130 +149,11 @@
 				<div class="am-u-md-4">
 					<!-- 大数据面积图  -->
 					<div class="card-box">
-						<h4 class="header-title m-t-0 m-b-30">2017.8家用电器用电分析</h4>
-						<div class="inbox-widget nicescroll" style="height: 315px; overflow: hidden; outline: none;" tabindex="5000">
-							<a href="#">
-								<div class="inbox-item">
-									<div class="inbox-item-img"><img src="../assets/img/tv-1.png" class="img-circle" alt=""></div>
-									<p class="inbox-item-author">电视机</p>
-									<p class="inbox-item-text">26.96kW·h</p>
-									<p class="inbox-item-date">11%</p>
-								</div>
-							</a>
-							<a href="#">
-								<div class="inbox-item">
-									<div class="inbox-item-img"><img src="../assets/img/refrigerator.png" class="img-circle" alt=""></div>
-									<p class="inbox-item-author">电冰箱</p>
-									<p class="inbox-item-text">39.21kW·h</p>
-									<p class="inbox-item-date">16%</p>
-								</div>
-							</a>
-							<a href="#">
-								<div class="inbox-item">
-									<div class="inbox-item-img"><img src="../assets/img/aircon.png" class="img-circle" alt=""></div>
-									<p class="inbox-item-author">空调</p>
-									<p class="inbox-item-text">105.38kW·h</p>
-									<p class="inbox-item-date">43%</p>
-								</div>
-							</a>
-							<a href="#">
-								<div class="inbox-item">
-									<div class="inbox-item-img"><img src="../assets/img/washer-1.png" class="img-circle" alt=""></div>
-									<p class="inbox-item-author">洗衣机</p>
-									<p class="inbox-item-text">44.12kW·h</p>
-									<p class="inbox-item-date">18%</p>
-								</div>
-							</a>
-							<a href="#">
-								<div class="inbox-item">
-									<div class="inbox-item-img"><img src="../assets/img/lighting-2.png" class="img-circle" alt=""></div>
-									<p class="inbox-item-author">照明</p>
-									<p class="inbox-item-text">29.41kW·h</p>
-									<p class="inbox-item-date">12%</p>
-								</div>
-							</a>
-						</div>
+						<h4 class="header-title m-t-0 m-b-30" style="text-align: left;">Week Comparison</h4><br />
+						<div id="columnar4" style=";height: 290px;"></div>
 					</div>
 				</div>
-
 			</div>
-
-			
-
-				<div class="am-u-md-6">
-					<!-- 大数据面积图  -->
-					<div class="card-box">
-						<div id="T1" style=";height: 300px;"></div>
-					</div>
-				</div>
-
-				<div class="am-u-md-4">
-					<!-- 大数据面积图  -->
-					<div class="card-box">
-						<div id="columnar2" style=";height: 300px;"></div>
-					</div>
-				</div>
-				<div class="am-u-md-2">
-					<!-- 大数据面积图  -->
-					<div class="card-box">
-						<h4 class="header-title m-t-0 m-b-30">你的表现:</h4>
-						<div class="inbox-widget nicescroll" style="height: 255px; overflow: hidden; outline: none;" tabindex="5000">
-							<a href="#">
-								<div class="inbox-item">
-									<p class="inbox-item-author">很好</p>
-									<div class="inbox-item-img"><img src="../assets/img/smile1.png" class="img-circle" alt=""></div>
-									<div class="inbox-item-img"><img src="../assets/img/smile1.png" class="img-circle" alt=""></div>
-
-								</div>
-							</a>
-							<a href="#">
-								<div class="inbox-item">
-									<p class="inbox-item-author">一般</p>
-									<div class="inbox-item-img"><img src="../assets/img/smile2.png" class="img-circle" alt=""></div>
-
-								</div>
-							</a>
-							<a href="#">
-								<div class="inbox-item">
-
-									<p class="inbox-item-author">较差!</p>
-
-								</div>
-							</a>
-
-						</div>
-					</div>
-				</div>
-			
-
-			
-
-				<div class="am-u-md-6">
-					<!-- 大数据面积图  -->
-					<div class="card-box">
-						<div id="columnar3" style="width=;height: 300px;"></div>
-					</div>
-				</div>
-
-				<div class="am-u-md-6">
-					<!-- 大数据面积图  -->
-					<div class="card-box">
-						<div id="columnar4" style=";height: 300px;"></div>
-					</div>
-				</div>
-
-			
-
-			
-
-				<div class="am-u-md12">
-					<!-- 大数据面积图  -->
-					<div class="card-box">
-						<div id="columnar5" style="width: 100%;height: 500px;"></div>
-					</div>
-				</div>
-			
-
 		</div>
 	</div>
 

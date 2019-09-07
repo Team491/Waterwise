@@ -149,7 +149,7 @@ sug1.setOption(option);
 var T1 = echarts.init(document.getElementById("T1"));
 option = {
     title : {
-        text: 'Comsumption Percentage',
+        text: 'Comsumption Evaluation',
         
     },
     tooltip : {
@@ -167,7 +167,7 @@ option = {
             name: '',
             type: 'gauge',
             detail: {formatter:'{value}%'},
-            data: [{value: 54, name: 'percentage'}]
+            data: [{value: 54, name: ''}]
         }
     ]
 };
