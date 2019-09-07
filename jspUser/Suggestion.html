@@ -38,7 +38,7 @@
                             
                         </form>
                     </li>
-                    <li><h4><a href="../jsp/login.html" style="color:">&nbsp;&nbsp;&nbsp;退出登录</a></h4></li>
+                    <li><h4><a href="../jsp/login.html" style="color:">&nbsp;&nbsp;&nbsp;Log out</a></h4></li>
 				</ul>
 			</div>
 		</header>
@@ -65,31 +65,36 @@
 	                    </div>
 	                    <!-- End User -->
 	            
-						 <ul class="am-list admin-sidebar-list">
-						    <li><a href="UserIndex.html"><span class="am-icon-home"></span> 首页</a></li>
-						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-table"></span> 实时数据 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
-						        <li><a href="realtime.html">总用电数据</a></li>
-						        <li><a href="Appliance.html">各用电器数据</a></li>
-						      </ul>
-						    </li>
-						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="am-icon-line-chart" aria-hidden="true"></i> 用电报告 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
-						        <li><a href="ReportDay.html" class="am-cf"> 日度报告</span></a></li>
-						        <li><a href="ReportMon.html" class="am-cf"> 月度报告</span></a></li>
-						        <li><a href="ReportYear.html" class="am-cf"> 年度报告</span></a></li>
-						      </ul>
-						    </li>
-						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> 节能策略 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
-						        <li><a href="Suggestion.html" class="am-cf">用电建议 </a></li>
-						        <li><a href="PriceStrategy.html">电价策略选择</a></li>   
-						      </ul>
-						    </li>
-						  </ul>
+						<ul class="am-list admin-sidebar-list">
+							<li><a href="UserIndex.html"><span class="am-icon-home"></span> Home Page</a></li>
+							<li class="admin-parent">
+								<a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span
+										class="am-icon-table"></span> Dashboard <span
+										class="am-icon-angle-right am-fr am-margin-right"></span></a>
+								<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
+									<li><a href="FacilityDashboard.html" class="am-cf"> Facility Dashboard</span></a></li>
+									<li><a href="DailyDashboard.html" class="am-cf"> Daily Dashboard</span></a></li>
+								</ul>
+							</li>
+							<li class="admin-parent">
+								<a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="am-icon-line-chart"
+										aria-hidden="true"></i> Peer Evaluation <span
+										class="am-icon-angle-right am-fr am-margin-right"></span></a>
+								<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
+									<li><a href="ReportDay.html" class="am-cf"> Neighbour Evaluation</span></a></li>
+									<li><a href="SelfEvaluation.html" class="am-cf"> Self-evaluation</span></a></li>
+								</ul>
+							</li>
+							<li class="admin-parent">
+								<a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span
+										class="am-icon-file"></span> Water Strategy Recommendation <span
+										class="am-icon-angle-right am-fr am-margin-right"></span></a>
+								<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
+									<li><a href="Suggestion.html" class="am-cf">Water Usage Strategy </a></li>
+									<li><a href="PriceStrategy.html">Water PriceStrategy</a></li>
+								</ul>
+							</li>
+						</ul>
 				</div>
 				  </div>
 				  <!-- sidebar end -->
@@ -102,90 +107,91 @@
 		<div class="content-page">
 			<!-- Start content -->
 			<div class="content">
-				
-			    
-				
 				<div class="am-g">
-					
-					<div class="am-u-md-4">
-						<div class="card-box">
-						<h4 class="header-title m-t-0 m-b-30">省电达标</h4>
-						<hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:15)" width="100%" color=#987cb9 SIZE=1> 
-
-							<div  id="sug1" style="height: 300px;"></div>
+					<div class="am-g">
+						<div class="am-u-md-4">
+							<div class="card-box">
+								<h4 class="header-title m-t-0 m-b-30">Achieve your Goal?</h4>
+								<hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:15)"
+									width="100%" color=#987cb9 SIZE=1>
+	
+								<div id="sug1" style="height: 300px;"></div>
+							</div>
+						</div>
+	
+						<div class="am-u-md-8">
+							<div class="card-box">
+								<h4 class="header-title m-t-0 m-b-30">Thank you! You have made the world better <img
+										src="../assets/img/smile1.png" class="img-circle" height="27" width="27"> </h4>
+								<hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:15)"
+									width="100%" color=#987cb9 SIZE=1>
+								<div style="height: 290px;">
+									<h5 class="header-title m-t-0 m-b-30">You have saved 18 dollar, and already planted 4
+										trees near riverbed!</h5>
+									<table class="am-table   am-text-nowrap">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Facility</th>
+												<th>Saved Water(t)</th>
+												<th>Saved Money($)</th>
+												<th>Got the goal</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>Clothe Washer</td>
+												<td>0.4</td>
+												<td>4</td>
+												<td><span class="label label-danger">No</span></td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>Tap in Kitchen</td>
+												<td>0.3</td>
+												<td>4</td>
+												<td><span class="label label-success">Yes</span></td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Tap in Balcony</td>
+												<td>2</td>
+												<td>2</td>
+												<td><span class="label label-danger">No</span></td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>Dish Washer</td>
+												<td>6</td>
+												<td>8</td>
+												<td><span class="label label-success">Yes</span></td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>Tap in Bashroom</td>
+												<td>8</td>
+												<td>7</td>
+												<td><span class="label label-success">Yes</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
 						</div>
 					</div>
-					
-					<div class="am-u-md-8">
-						<div class="card-box">
-						<h4 class="header-title m-t-0 m-b-30">上月份总体评价：<img src="../assets/img/smile1.png" class="img-circle"  height="27" width="27"> (总体良好)</h4>
-                        <hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:15)" width="100%" color=#987cb9 SIZE=1> 
-                            <div style="height: 290px;">
-                                <h5 class="header-title m-t-0 m-b-30">使用该节能策略已经为您节省了25.5元，减少3g碳排放，累计已经种了2棵樟树。</h5>
-                                <table class="am-table   am-text-nowrap">
-                                            <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>用电器</th>
-                                                <th>节省电量</th>
-                                                <th>节省金额</th>
-                                                <th>是否达标</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>照明</td>
-                                                    <td>4度</td>
-                                                    <td>4元</td>
-                                                    <td><span class="label label-danger">否</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>空调</td>
-                                                    <td>3度</td>
-                                                    <td>4元</td>
-                                                    <td><span class="label label-success">是</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>电视</td>
-                                                    <td>2度</td>
-                                                    <td>3.5元</td>
-                                                    <td><span class="label label-danger">否</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td>电冰箱</td>
-                                                    <td>6度</td>
-                                                    <td>8元</td>
-                                                    <td><span class="label label-success">是</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>5</td>
-                                                    <td>洗衣机</td>
-                                                    <td>8度</td>
-                                                    <td>7元</td>
-                                                    <td><span class="label label-success">是</span></td>
-                                                </tr>     
-                                            </tbody>
-                                    </table>
-                            </div>
-                        </div>
-					</div>
 				</div>
-			</div>
 			
-			<h6 class="header-title m-t-0 m-b-30"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选择你的用电策略</b></h6>
+			<h6 class="header-title m-t-0 m-b-30"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Strategy</b></h6>
 			<div class="am-g">
 					<div class="am-u-md-2">
 					
 						<div class="card-box">
 							<div  style="height: 200px;"  align="center" >   
-							     <img src="../assets/img/refrigerator.png"class="img-polaroid" width="50%" height="30%">
+							     <img src="../assets/img/tap1.png"class="img-polaroid" width="50%" height="30%">
 							     <hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:150)" width="100%" color=black SIZE=100>
 							     <div  style="height: 140px;">   
-							         <h7 class="header-title m-t-0 m-b-30">冰箱耗电长时间超过平均水品建议换新。</h7>
+							         <h7 class="header-title m-t-0 m-b-30">6p.m - 12p.m water comsumption above most users, might need to reduce.</h7>
 							     </div>
 							</div>
 						</div>
@@ -195,10 +201,10 @@
 					
 						<div class="card-box">
 							<div  style="height: 200px;"  align="center" >   
-							     <img src="../assets/img/tv-2.png"class="img-polaroid" width="50%" height="30%">
+							     <img src="../assets/img/tap2.png"class="img-polaroid" width="50%" height="30%">
 							     <hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:150)" width="100%" color=black SIZE=100>
 							     <div  style="height: 140px;">   
-							         <h7 class="header-title m-t-0 m-b-30">不要频繁开关，建议在夜晚不用电视把后面插座关闭。</h7>
+							         <h7 class="header-title m-t-0 m-b-30">Tap need to be checked whether it has issue.</h7>
 							     </div>
 							</div>
 						</div>
@@ -211,7 +217,7 @@
 							     <img src="../assets/img/washer-1.png"class="img-polaroid" width="50%" height="30%">
 							     <hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:150)" width="100%" color=black SIZE=100>
 							     <div  style="height: 140px;">   
-							         <h7 class="header-title m-t-0 m-b-30">下周二迎来春节，用电高峰建议在晚上九点洗衣。</h7>
+							         <h7 class="header-title m-t-0 m-b-30">Washer might be replaced to save water.</h7>
 							     </div>
 							</div>
 						</div>
@@ -221,10 +227,10 @@
 					
 						<div class="card-box">
 							<div  style="height: 200px;"  align="center" >   
-							     <img src="../assets/img/lighting-1.png"class="img-polaroid" width="50%" height="30%">
+							     <img src="../assets/img/cloth washer.png"class="img-polaroid" width="50%" height="30%">
 							     <hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:150)" width="100%" color=black SIZE=100>
 							     <div  style="height: 140px;">   
-							         <h7 class="header-title m-t-0 m-b-30">许多电灯耗电明显，建议换节能灯泡。</h7>
+							         <h7 class="header-title m-t-0 m-b-30">Adjust the washing time.</h7>
 							     </div>
 							</div>
 						</div>
@@ -234,10 +240,10 @@
 					
 						<div class="card-box">
 							<div  style="height: 200px;"  align="center" >   
-							     <img src="../assets/img/aircon.png"class="img-polaroid" width="50%" height="30%">
+							     <img src="../assets/img/kitchen.png"class="img-polaroid" width="50%" height="30%">
 							     <hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:150)" width="100%" color=black SIZE=100>
 							     <div  style="height: 140px;">   
-							         <h7 class="header-title m-t-0 m-b-30">空调在夜晚建议调成睡眠模式。</h7>
+							         <h7 class="header-title m-t-0 m-b-30">Kitchen water are fine.</h7>
 							     </div>
 							</div>
 						</div>
@@ -247,10 +253,10 @@
 					
 						<div class="card-box">
 							<div  style="height: 200px;"  align="center" >   
-							     <img src="../assets/img/jiating.png"class="img-polaroid" width="50%" height="30%">
+							     <img src="../assets/img/washer-2.png"class="img-polaroid" width="50%" height="30%">
 							     <hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:150)" width="100%" color=black SIZE=100>
 							     <div  style="height: 140px;">   
-							         <h7 class="header-title m-t-0 m-b-30">白天耗电高于平均水平，建议晚上用电时避开高峰。</h7>
+							         <h7 class="header-title m-t-0 m-b-30">In the night, avg usage is above most people, suggest using at morning</h7>
 							     </div>
 							</div>
 						</div>
