@@ -142,7 +142,45 @@ var sug1 = echarts.init(document.getElementById("sug1"));
 sug1.setOption(option);
 })();
 (function(){
-	
+
+
+(function(){
+
+var T1 = echarts.init(document.getElementById("T1"));
+option = {
+    title : {
+        text: 'Comsumption Percentage',
+        
+    },
+    tooltip : {
+        formatter: "{a} <br/>{b} : {c}%"
+    },
+    toolbox: {
+        feature: {
+            restore: {},
+            saveAsImage: {}
+        }
+    },
+        
+    series: [
+        {
+            name: '',
+            type: 'gauge',
+            detail: {formatter:'{value}%'},
+            data: [{value: 54, name: 'percentage'}]
+        }
+    ]
+};
+
+setInterval(function () {
+    option.series[0].data[0].value = 54 - 0;
+    myChart.setOption(option, true);
+},2000);
+
+T1.setOption(option);
+})();
+        
+
 var pie3 = echarts.init(document.getElementById("pie3"));
 
 option = {

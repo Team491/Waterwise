@@ -6,7 +6,7 @@
 	
 	option = {
     title: {
-        text: '2017/9/16用电量分布',
+        text: '2017/9/16 Water Usage Distribution',
         subtext: ''
     },
     tooltip: {
@@ -29,7 +29,7 @@
     yAxis: {
         type: 'value',
         axisLabel: {
-            formatter: '{value} kW·h'
+            formatter: '{value} t'
         },
         axisPointer: {
             snap: true
@@ -60,18 +60,18 @@
     },
     series: [
         {
-            name:'用电量',
+            name:'Water Usage',
             type:'line',
             smooth: true,
             data: [0.017, 0.103, 0.022, 0.017, 0.086, 0.037, 0.017, 0.071, 0.054, 0.017, 0.052, 0.072, 0.017, 0.035, 0.16, 0.19, 0.26, 0.31, 0.177, 0.156, 0.082, 0.018, 0.017, 0.089, 0.033, 0.017, 0.077, 0.045, 0.017, 0.066, 0.057, 0.017, 0.05, 0.074, 0.017, 0.035, 0.176, 0.24, 0.31, 0.35, 0.42, 0.53, 0.31, 0.28, 0.062, 0.12, 0.098, 0.064, 0.017],
             markArea: {
                 data: [ [{
-                    name: '早高峰',
+                    name: 'Morning Peak',
                     xAxis: '7:00'
                 }, {
                     xAxis: '9:00'
                 }], [{
-                    name: '晚高峰',
+                    name: 'Evening Peak',
                     xAxis: '18:00'
                 }, {
                     xAxis: '22:00'
