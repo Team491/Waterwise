@@ -1,108 +1,119 @@
-
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>UserIndex</title>
-		<link rel="stylesheet" href="../assets/css/amazeui.css" />
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../assets/css/core.css" />
-		<link rel="stylesheet" href="../assets/css/menu.css" />
-		<link rel="stylesheet" href="../assets/css/index.css" />
-		<link rel="stylesheet" href="../assets/css/admin.css" />
-		<link rel="stylesheet" href="../assets/css/page/typography.css" />
-		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="../assets/css/page/form.css" />
-		<link rel="stylesheet" href="../assets/css/component.css" />
-	</head>
-	<body>
-		<!-- Begin page -->
-		<header class="am-topbar am-topbar-fixed-top">		
-			<div class="am-topbar-left am-hide-sm-only">
-                <a href="UserIndex.html" class="logo"><img src="../assets/img/icon-rect.jpg" style="width: auto; height: auto; max-width: 100%; max-height: 100%" /></a>
-            </div>
-	
-			<div class="contain">
-				<ul class="am-nav am-navbar-nav am-navbar-left">
 
-					<!--<li><h4 class="page-title">柱状图</h4></li>-->
-				</ul>
-				
-				<ul class="am-nav am-navbar-nav am-navbar-right">
-					<li class="inform"><i class="am-icon-bell-o" aria-hidden="true"></i></li>
-					<li class="hidden-xs am-hide-sm-only">
-                        <form role="search" class="app-search">
-                            <input placeholder="2017-09-17" class="form-control">
-                           
-                        </form>
-                    </li>
-                    <li><h4><a href="../jsp/login.html" style="color:">&nbsp;&nbsp;&nbsp;Log out</a></h4></li>
-				</ul>
-			</div>
-		</header>
-		<!-- end page -->
-		
-		
-		<div class="admin">
-			<!--<div class="am-g">-->
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UserIndex</title>
+	<link rel="stylesheet" href="../assets/css/amazeui.css" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../assets/css/core.css" />
+	<link rel="stylesheet" href="../assets/css/menu.css" />
+	<link rel="stylesheet" href="../assets/css/index.css" />
+	<link rel="stylesheet" href="../assets/css/admin.css" />
+	<link rel="stylesheet" href="../assets/css/page/typography.css" />
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="../assets/css/page/form.css" />
+	<link rel="stylesheet" href="../assets/css/component.css" />
+</head>
+
+<body>
+	<!-- Begin page -->
+	<header class="am-topbar am-topbar-fixed-top">
+		<div class="am-topbar-left am-hide-sm-only">
+			<a href="UserIndex.html" class="logo"><img src="../assets/img/icon-rect.jpg"
+					style="width: auto; height: auto; max-width: 100%; max-height: 100%" /></a>
+		</div>
+
+		<div class="contain">
+			<ul class="am-nav am-navbar-nav am-navbar-left">
+
+				<!--<li><h4 class="page-title">柱状图</h4></li>-->
+			</ul>
+
+			<ul class="am-nav am-navbar-nav am-navbar-right">
+				<li class="inform"><i class="am-icon-bell-o" aria-hidden="true"></i></li>
+				<li class="hidden-xs am-hide-sm-only">
+					<form role="search" class="app-search">
+						<input placeholder="2017-09-17" class="form-control">
+
+					</form>
+				</li>
+				<li>
+					<h4><a href="../jsp/login.html" style="color:">&nbsp;&nbsp;&nbsp;Log out</a></h4>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<!-- end page -->
+
+
+	<div class="admin">
+		<!--<div class="am-g">-->
 		<!-- ========== Left Sidebar Start ========== -->
 		<!--<div class="left side-menu am-hide-sm-only am-u-md-1 am-padding-0">
 			<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 548px;">
 				<div class="sidebar-inner slimscrollleft" style="overflow: hidden; width: auto; height: 548px;">-->
-                  <!-- sidebar start -->
-				  <div class="admin-sidebar am-offcanvas  am-padding-0" id="admin-offcanvas">
-				    <div class="am-offcanvas-bar admin-offcanvas-bar">
-				    	<!-- User -->
-						<div class="user-box am-hide-sm-only">
-	                        <div class="user-img">
-	                            <img src="../assets/img/yonghu.png" alt="user-img" title="Mat Helme" class="img-circle img-thumbnail img-responsive">
-	                            <div class="user-status offline"><i class="am-icon-dot-circle-o" aria-hidden="true"></i></div>
-	                        </div>
-	                        <h5><a href="#">1202276938</a> </h5>
-	                        
-	                    </div>
-	                    <!-- End User -->
-	            
-						<ul class="am-list admin-sidebar-list">
-						<li><a href="UserIndex.html"><span class="am-icon-home"></span> Home Page</a></li>
-						<li class="admin-parent">
-							<a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-table"></span> Dashboard <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-							<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
-								<li><a href="FacilityDashboard.html" class="am-cf"> Facility Dashboard</span></a></li>
-								<li><a href="DailyDashboard.html" class="am-cf"> Daily Dashboard</span></a></li>
-							</ul>
-						</li>
-						<li class="admin-parent">
-							<a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="am-icon-line-chart" aria-hidden="true"></i> Peer Evaluation <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-							<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
+		<!-- sidebar start -->
+		<div class="admin-sidebar am-offcanvas  am-padding-0" id="admin-offcanvas">
+			<div class="am-offcanvas-bar admin-offcanvas-bar">
+				<!-- User -->
+				<div class="user-box am-hide-sm-only">
+					<div class="user-img">
+						<img src="../assets/img/yonghu.png" alt="user-img" title="Mat Helme"
+							class="img-circle img-thumbnail img-responsive">
+						<div class="user-status offline"><i class="am-icon-dot-circle-o" aria-hidden="true"></i></div>
+					</div>
+					<h5><a href="#">1202276938</a> </h5>
+
+				</div>
+				<!-- End User -->
+
+				<ul class="am-list admin-sidebar-list">
+					<li><a href="UserIndex.html"><span class="am-icon-home"></span> Home Page</a></li>
+					<li class="admin-parent">
+						<a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span
+								class="am-icon-table"></span> Dashboard <span
+								class="am-icon-angle-right am-fr am-margin-right"></span></a>
+						<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
+							<li><a href="FacilityDashboard.html" class="am-cf"> Facility Dashboard</span></a></li>
+							<li><a href="DailyDashboard.html" class="am-cf"> Daily Dashboard</span></a></li>
+						</ul>
+					</li>
+					<li class="admin-parent">
+						<a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="am-icon-line-chart"
+								aria-hidden="true"></i> Peer Evaluation <span
+								class="am-icon-angle-right am-fr am-margin-right"></span></a>
+						<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
 							<li><a href="ReportDay.html" class="am-cf"> Neighbour Evaluation</span></a></li>
 							<li><a href="ReportMon.html" class="am-cf"> Self-evaluation</span></a></li>
 							<li><a href="ReportYear.html" class="am-cf"> Yearly Evaluation</span></a></li>
-							</ul>
-						</li>
-						<li class="admin-parent">
-							<a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> Water Strategy Recommendation <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-							<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
-							<li><a href="Suggestion.html" class="am-cf">Water Usage Strategy </a></li>
-							<li><a href="PriceStrategy.html">Water PriceStrategy</a></li>   
-							</ul>
-						</li>
 						</ul>
-				</div>
-				  </div>
-				  <!-- sidebar end -->
-    
-				<!--</div>
+					</li>
+					<li class="admin-parent">
+						<a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span
+								class="am-icon-file"></span> Water Strategy Recommendation <span
+								class="am-icon-angle-right am-fr am-margin-right"></span></a>
+						<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
+							<li><a href="Suggestion.html" class="am-cf">Water Usage Strategy </a></li>
+							<li><a href="PriceStrategy.html">Water PriceStrategy</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- sidebar end -->
+
+		<!--</div>
 			</div>
     
 				<!--</div>
 			</div>
 		</div>-->
 		<!-- ========== Left Sidebar end ========== -->
-		
-		
-		
+
+
+
 
 		<!-- ============================================================== -->
 		<!-- Start right Content here -->
@@ -113,135 +124,145 @@
 					<div class="am-u-md-6">
 						<!-- 大数据面积图  -->
 						<div class="card-box">
-							<div  id="columnar3" style=";height: 300px;"></div>
+							<div id="columnar3" style=";height: 300px;"></div>
 						</div>
 					</div>
 					<div class="am-u-md-4">
 						<!-- 大数据面积图  -->
 						<div class="card-box">
-							<div  id="T1" style=";height: 300px;"></div>
+							<div id="T1" style=";height: 300px;"></div>
 						</div>
 					</div>
-					 <div class="am-u-md-2">
+					<div class="am-u-md-2">
 						<!-- 大数据面积图  -->
 						<div class="card-box">
 							<h4 class="header-title m-t-0 m-b-30">Your Performance:</h4>
-							<div class="inbox-widget nicescroll" style="height: 255px; overflow: hidden; outline: none;" tabindex="5000">
+							<div class="inbox-widget nicescroll" style="height: 255px; overflow: hidden; outline: none;"
+								tabindex="5000">
 								<a href="#">
 									<div class="inbox-item">
 										<p class="inbox-item-author">Very Good!!</p>
-										<div class="inbox-item-img"><img src="../assets/img/smile1.png" class="img-circle" alt=""></div>
-										<div class="inbox-item-img"><img src="../assets/img/smile1.png" class="img-circle" alt=""></div>
-										
-									</div>
-								</a>
-								<a href="#">
-									<div class="inbox-item">
-											<p class="inbox-item-author"></p>
-										<div class="inbox-item-img"><img src="../assets/img/smile2.png" class="img-circle" alt=""></div>
-										
-										
-									</div>
-								</a>
-								<a href="#">
-									<div class="inbox-item">
-										
-										<p class="inbox-item-author">Need improvement in the water taps usage.</p>
-										
-									</div>
-								</a>
-									
-							</div>
-						</div>
-					</div>		
-				</div><!-- am-g -->
+										<div class="inbox-item-img"><img src="../assets/img/smile1.png"
+												class="img-circle" alt=""></div>
+										<div class="inbox-item-img"><img src="../assets/img/smile1.png"
+												class="img-circle" alt=""></div>
 
-				<div class="am-g">
-					
-						<div class="am-u-md-4">
-							<div class="card-box">
-							<h4 class="header-title m-t-0 m-b-30">Achieve your Goal?</h4>
-							<hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:15)" width="100%" color=#987cb9 SIZE=1> 
-	
-								<div  id="sug1" style="height: 300px;"></div>
-							</div>
-						</div>
-						
-						<div class="am-u-md-8">
-							<div class="card-box">
-							<h4 class="header-title m-t-0 m-b-30">Thank you! You have made the world better <img src="../assets/img/smile1.png" class="img-circle"  height="27" width="27"> </h4>
-							<hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:15)" width="100%" color=#987cb9 SIZE=1> 
-								<div style="height: 290px;">
-									<h5 class="header-title m-t-0 m-b-30">You have saved 18 dollar, and already planted 4 trees near riverbed!</h5>
-									<table class="am-table   am-text-nowrap">
-												<thead>
-												<tr>
-													<th>#</th>
-													<th>Facility</th>
-													<th>Saved Water(t)</th>
-													<th>Saved Money($)</th>
-													<th>Got the goal</th>
-												</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>1</td>
-														<td>Clothe Washer</td>
-														<td>0.4</td>
-														<td>4</td>
-														<td><span class="label label-danger">No</span></td>
-													</tr>
-													<tr>
-														<td>2</td>
-														<td>Tap in Kitchen</td>
-														<td>0.3</td>
-														<td>4</td>
-														<td><span class="label label-success">Yes</span></td>
-													</tr>
-													<tr>
-														<td>3</td>
-														<td>Tap in Balcony</td>
-														<td>2</td>
-														<td>2</td>
-														<td><span class="label label-danger">No</span></td>
-													</tr>
-													<tr>
-														<td>4</td>
-														<td>Dish Washer</td>
-														<td>6</td>
-														<td>8</td>
-														<td><span class="label label-success">Yes</span></td>
-													</tr>
-													<tr>
-														<td>5</td>
-														<td>Tap in Bashroom</td>
-														<td>8</td>
-														<td>7</td>
-														<td><span class="label label-success">Yes</span></td>
-													</tr>     
-												</tbody>
-										</table>
-								</div>
+									</div>
+								</a>
+								<a href="#">
+									<div class="inbox-item">
+										<p class="inbox-item-author"></p>
+										<div class="inbox-item-img"><img src="../assets/img/smile2.png"
+												class="img-circle" alt=""></div>
+
+
+									</div>
+								</a>
+								<a href="#">
+									<div class="inbox-item">
+
+										<p class="inbox-item-author">Need improvement in the water taps usage.</p>
+
+									</div>
+								</a>
+
 							</div>
 						</div>
 					</div>
+				</div><!-- am-g -->
+
+				<div class="am-g">
+
+					<div class="am-u-md-4">
+						<div class="card-box">
+							<h4 class="header-title m-t-0 m-b-30">Achieve your Goal?</h4>
+							<hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:15)"
+								width="100%" color=#987cb9 SIZE=1>
+
+							<div id="sug1" style="height: 300px;"></div>
+						</div>
+					</div>
+
+					<div class="am-u-md-8">
+						<div class="card-box">
+							<h4 class="header-title m-t-0 m-b-30">Thank you! You have made the world better <img
+									src="../assets/img/smile1.png" class="img-circle" height="27" width="27"> </h4>
+							<hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:15)"
+								width="100%" color=#987cb9 SIZE=1>
+							<div style="height: 290px;">
+								<h5 class="header-title m-t-0 m-b-30">You have saved 18 dollar, and already planted 4
+									trees near riverbed!</h5>
+								<table class="am-table   am-text-nowrap">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>Facility</th>
+											<th>Saved Water(t)</th>
+											<th>Saved Money($)</th>
+											<th>Got the goal</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Clothe Washer</td>
+											<td>0.4</td>
+											<td>4</td>
+											<td><span class="label label-danger">No</span></td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Tap in Kitchen</td>
+											<td>0.3</td>
+											<td>4</td>
+											<td><span class="label label-success">Yes</span></td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>Tap in Balcony</td>
+											<td>2</td>
+											<td>2</td>
+											<td><span class="label label-danger">No</span></td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>Dish Washer</td>
+											<td>6</td>
+											<td>8</td>
+											<td><span class="label label-success">Yes</span></td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>Tap in Bashroom</td>
+											<td>8</td>
+											<td>7</td>
+											<td><span class="label label-success">Yes</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end right Content here -->
+			<!--</div>-->
 		</div>
-		<!-- end right Content here -->
-		<!--</div>-->
-		</div>
-		</div>
-		
-		<!-- navbar -->
-		<a href="admin-offcanvas" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"><!--<i class="fa fa-bars" aria-hidden="true"></i>--></a>
-		
-		<script type="text/javascript" src="../assets/js/jquery-2.1.0.js" ></script>
-		<script type="text/javascript" src="../assets/js/amazeui.min.js"></script>
-		<script type="text/javascript" src="../assets/js/app.js" ></script>
-		<script type="text/javascript" src="../assets/js/blockUI.js" ></script>
-		<script type="text/javascript" src="../assets/js/charts/echarts.min.js" ></script>
-		
-		
-        <script type="text/javascript" src="../assets/js/charts/main.js" ></script>
-	</body>
-	
+	</div>
+
+	<!-- navbar -->
+	<a href="admin-offcanvas" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu"
+		data-am-offcanvas="{target: '#admin-offcanvas'}">
+		<!--<i class="fa fa-bars" aria-hidden="true"></i>--></a>
+
+	<script type="text/javascript" src="../assets/js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="../assets/js/amazeui.min.js"></script>
+	<script type="text/javascript" src="../assets/js/app.js"></script>
+	<script type="text/javascript" src="../assets/js/blockUI.js"></script>
+	<script type="text/javascript" src="../assets/js/charts/echarts.min.js"></script>
+
+
+	<script type="text/javascript" src="../assets/js/charts/main.js"></script>
+</body>
+
 </html>
