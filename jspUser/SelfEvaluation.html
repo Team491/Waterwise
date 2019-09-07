@@ -86,7 +86,7 @@
 								class="am-icon-angle-right am-fr am-margin-right"></span></a>
 						<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
 							<li><a href="ReportDay.html" class="am-cf"> Neighbour Evaluation</span></a></li>
-							<li><a href="ReportMon.html" class="am-cf"> Self-evaluation</span></a></li>
+							<li><a href="SelfEvaluation.html" class="am-cf"> Self-evaluation</span></a></li>
 						</ul>
 					</li>
 					<li class="admin-parent">
@@ -108,152 +108,63 @@
 				</ul>
 			</div>
 		</div>
-		<!-- sidebar end -->
 
-		<!--</div>
-			</div>
-    
-				<!--</div>
-			</div>
-		</div>-->
-		<!-- ========== Left Sidebar end ========== -->
+	<div class="content-page">
+		<!-- Start content -->
+		<div class="content">
+			<div class="am-g"><br/><br/><br/><br/></div>
 
+			<div class="am-g">
+				<div class="am-u-md-8">
+					<div class="card-box">
+						<h4 class="header-title m-t-0 m-b-30" style="text-align: left;">Bill Comparison</h4><br />
 
-
-
-		<!-- ============================================================== -->
-		<!-- Start right Content here -->
-		<div class="content-page">
-			<!-- Start content -->
-			<div class="content">
-				<div class="am-g">
-					<div class="am-u-md-6">
-						<!-- 大数据面积图  -->
-						<div class="card-box">
-							<div id="columnar3" style=";height: 300px;"></div>
-						</div>
-					</div>
-					<div class="am-u-md-4">
-						<!-- 大数据面积图  -->
-						<div class="card-box">
-							<div id="T1" style=";height: 300px;"></div>
-						</div>
-					</div>
-					<div class="am-u-md-2">
-						<!-- 大数据面积图  -->
-						<div class="card-box">
-							<h4 class="header-title m-t-0 m-b-30">Your Performance:</h4>
-							<div class="inbox-widget nicescroll" style="height: 255px; overflow: hidden; outline: none;"
-								tabindex="5000">
-								<a href="#">
-									<div class="inbox-item">
-										<p class="inbox-item-author">Very Good!!</p>
-										<div class="inbox-item-img"><img src="../assets/img/smile1.png"
-												class="img-circle" alt=""></div>
-										<div class="inbox-item-img"><img src="../assets/img/smile1.png"
-												class="img-circle" alt=""></div>
-
-									</div>
-								</a>
-								<a href="#">
-									<div class="inbox-item">
-										<p class="inbox-item-author"></p>
-										<div class="inbox-item-img"><img src="../assets/img/smile2.png"
-												class="img-circle" alt=""></div>
-
-
-									</div>
-								</a>
-								<a href="#">
-									<div class="inbox-item">
-
-										<p class="inbox-item-author">Need improvement in the water taps usage.</p>
-
-									</div>
-								</a>
-
-							</div>
-						</div>
-					</div>
-				</div><!-- am-g -->
-
-				<div class="am-g">
-
-					<div class="am-u-md-4">
-						<div class="card-box">
-							<h4 class="header-title m-t-0 m-b-30">Achieve your Goal?</h4>
-							<hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:15)"
-								width="100%" color=#987cb9 SIZE=1>
-
-							<div id="sug1" style="height: 300px;"></div>
-						</div>
-					</div>
-
-					<div class="am-u-md-8">
-						<div class="card-box">
-							<h4 class="header-title m-t-0 m-b-30">Thank you! You have made the world better <img
-									src="../assets/img/smile1.png" class="img-circle" height="27" width="27"> </h4>
-							<hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:15)"
-								width="100%" color=#987cb9 SIZE=1>
-							<div style="height: 290px;">
-								<h5 class="header-title m-t-0 m-b-30">You have saved 18 dollar, and already planted 4
-									trees near riverbed!</h5>
-								<table class="am-table   am-text-nowrap">
-									<thead>
-										<tr>
-											<th>#</th>
-											<th>Facility</th>
-											<th>Saved Water(t)</th>
-											<th>Saved Money($)</th>
-											<th>Got the goal</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>1</td>
-											<td>Clothe Washer</td>
-											<td>0.4</td>
-											<td>4</td>
-											<td><span class="label label-danger">No</span></td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>Tap in Kitchen</td>
-											<td>0.3</td>
-											<td>4</td>
-											<td><span class="label label-success">Yes</span></td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td>Tap in Balcony</td>
-											<td>2</td>
-											<td>2</td>
-											<td><span class="label label-danger">No</span></td>
-										</tr>
-										<tr>
-											<td>4</td>
-											<td>Dish Washer</td>
-											<td>6</td>
-											<td>8</td>
-											<td><span class="label label-success">Yes</span></td>
-										</tr>
-										<tr>
-											<td>5</td>
-											<td>Tap in Bashroom</td>
-											<td>8</td>
-											<td>7</td>
-											<td><span class="label label-success">Yes</span></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
+						<div style="float:left;"><img src="../assets/img/bill.png" alt=""></div>
+						<table class="am-table1">
+							<thead>
+								<tr>
+									<th></th>
+									<th>This Month</th>
+									<th>Last Month</th>
+									<th>Difference</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Weather</td>
+									<td>28℃</td>
+									<td>31℃</td>
+									<td>Down3℃</td>
+								</tr>
+								<tr>
+									<td>Comsumption</td>
+									<td>245.08t</td>
+									<td>357.71t</td>
+									<td>Down112.6t</td>
+								</tr>
+								<tr>
+									<td>Difference Range</td>
+									<td>31</td>
+									<td>31</td>
+									<td>Same</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
+
+				<div class="am-u-md-4">
+					<!-- 大数据面积图  -->
+					<div class="card-box">
+						<h4 class="header-title m-t-0 m-b-30" style="text-align: left;">Week Comparison</h4><br />
+						<div id="columnar4" style=";height: 290px;"></div>
+					</div>
+
+				</div>
 			</div>
-			<!-- end right Content here -->
-			<!--</div>-->
 		</div>
+
+	</div>
 	</div>
 
 	<!-- navbar -->
@@ -266,9 +177,13 @@
 	<script type="text/javascript" src="../assets/js/app.js"></script>
 	<script type="text/javascript" src="../assets/js/blockUI.js"></script>
 	<script type="text/javascript" src="../assets/js/charts/echarts.min.js"></script>
+	<script type="text/javascript" src="../assets/js/charts/columnarChart.js"></script>
 
 
-	<script type="text/javascript" src="../assets/js/charts/main.js"></script>
+
+
+
+
 </body>
 
 </html>
