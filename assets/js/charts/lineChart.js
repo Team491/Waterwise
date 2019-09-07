@@ -7,14 +7,14 @@
 	
 	option = {
     title : {
-        text: '2017/09/17实时用电曲线',
+        text: 'Realtime Water Usage Line',
         
     },
     tooltip : {
         trigger: 'axis'
     },
     legend: {
-        data:['用电量']
+        data:['Water Usage']
     },
     toolbox: {
         show : true,
@@ -38,24 +38,24 @@
         {
             type : 'value',
             axisLabel : {
-                formatter: '{value} KW·h'
+                formatter: '{value} t'
             }
         }
     ],
     series : [
         {
-            name:'用电量',
+            name:'Water Usage',
             type:'line',
             data:[0.017, 0.103, 0.022, 0.017, 0.086, 0.037, 0.017, 0.071, 0.054, 0.017, 0.052, 0.072, 0.017, 0.035, 0.16, 0.19, 0.26, 0.31, 0.177, 0.156, 0.082, 0.018, 0.017, 0.089, 0.033, 0.017, 0.077, 0.045, 0.017, 0.066, 0.057, 0.017, 0.05, 0.074, 0.017, 0.035, 0.176, 0.24, 0.31, 0.35, 0.38, 0.41, , , , , , , ],
             markPoint : {
                 data : [
-                    {type : 'max', name: '最大值'}
+                    {type : 'max', name: 'Max'}
                     
                 ]
             },
             markLine : {
                 data : [
-                    {type : 'average', name: '平均值'}
+                    {type : 'average', name: 'Avg'}
                 ]
             }
         }
@@ -65,6 +65,82 @@
 
 realtime.setOption(option);
 })();
+
+(function(){
+	
+	var dynamic = echarts.init(document.getElementById("dynamic"));
+option = {
+    title: {
+        text: 'Facility Comparing'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['Clothe Washer','Tap in Kitchen','Water Usage','Tap in Balcony','Dish Washer']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            magicType : {show: true, type: ['line', 'bar']},
+            restore : {show: true},
+            saveAsImage: {}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['0:00', '0:30', '1:00', '1:30', '2:00', '2:30', '3:00', '3:30', '4:00', '4:30', '5:00', '5:30', '6:00', '6:30', '7:00', '7:30', '8:00', '8:30', '9:00', '9:30', '10:00', '10:30', '11:00', '11:30', '12:00', '12:30', '13:00', '13:30', '14:00', '14:30', '15:00', '15:30', '16:00', '16:30', '17:00', '17:30', '18:00', '18:30', '19:00', '19:30', '20:00', '20:30', '21:00', '21:30', '22:00', '22:30', '23:00', '23:30']
+    },
+    yAxis: {
+    	name : 't',
+        type: 'value'
+    },
+    series: [
+        {
+            name:'Clothe Washer',
+            type:'line',
+            stack: 'total',
+            data:[, , , , , , , , , , , , , 0.24, 0.24, 0.24, , , , , , , , , , , , , , , , , , , , , 0.24, 0.24, 0.24, , , , , , , , , ]
+        },
+        {
+            name:'Tap in Kitchen',
+            type:'line',
+            stack: 'total',
+            data:[0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, 0.46, , , , , , , ]
+        },
+        {
+            name:'Water Usage',
+            type:'line',
+            stack: 'total',
+            data:[0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, , , , , , , , , , , , , , , , , , , , 1.68, 1.68, 1.68, 1.68, 1.68, , , , , , , ]
+        },
+        {
+            name:'Tap in Balcony',
+            type:'line',
+            stack: 'total',
+            data:[, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 0.1, 0.1, 0.1, 0.1, 0.1, , , , , , , ]
+        },
+        {
+            name:'Dish Washer',
+            type:'line',
+            stack: 'total',
+            data:[, , , , , , , , , , , , 0.2, 0.2, 0.2, 0.06, 0.06, , , , , , , , , , , , , , , , , , , , 0.38, 0.38, 0.38, 0.38, 0.38, , , , , , , ]
+        }
+    ]
+};
+
+dynamic.setOption(option);
+
+})();
+
 
 
 (function(){

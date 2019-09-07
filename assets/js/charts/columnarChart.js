@@ -120,7 +120,7 @@ var columnar3 = echarts.init(document.getElementById("columnar3"));
 
 option = {
   title: {
-		text: "2017.8用电量统计",
+		text: "Your water usage statistics",
 		x:'left'
 	},
     tooltip : {
@@ -151,7 +151,7 @@ option = {
         {
             type : 'value',
           axisLabel : {
-                formatter: '{value} KW·h'
+                formatter: '{value} T'
             }
         }
     ],

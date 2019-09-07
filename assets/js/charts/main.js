@@ -4,7 +4,7 @@ var columnar3 = echarts.init(document.getElementById("columnar3"));
 
 option = {
   title: {
-		text: "2017.8用电量统计",
+		text: "Your water usage statistics",
 		x:'left'
 	},
     tooltip : {
@@ -35,7 +35,7 @@ option = {
         {
             type : 'value',
           axisLabel : {
-                formatter: '{value} KW·h'
+                formatter: '{value} t'
             }
         }
     ],
@@ -54,72 +54,6 @@ option = {
 columnar3.setOption(option);
 })();
 
-(function(){
-
-var columnar2 = echarts.init(document.getElementById("columnar2"));
-
-option = {
-     title: {
-		text: "2017.8邻里对比",
-		x:'left'
-	},
-    tooltip: {
-        show: true,
-        trigger: 'item',
-        formatter: "{c}%"
-    },
-   
-    calculable : true,
-    xAxis : [
-        {
-            type : 'category',
-            data : ['你','最高效邻居','平均量']
-        }
-    ],
-    yAxis : [
-        {
-            type : 'value',
-             show : false,
-            name:'变化率 (%)',
-            nameTextStyle: {
-                //color: '#fff',
-                fontSize: 16
-            },
-            axisLine: {
-                lineStyle: {
-                    color: '#c050',
-                }
-            },
-        }
-    ],
-    series : [
-        {
-            name:'蒸发量',
-            type:'bar',
-            data:[128, 180, 246],
-            itemStyle: {
-                normal: {
-                    color: function(params) {
-                        // build a color map as your need.
-                        var colorList = [
-                         
-                         
-                           '#9BCA63','#26C0C0','#27727B'
-                        ];
-                        return colorList[params.dataIndex]
-                    },
-                    label: {
-                        show: true,
-                        position: 'top',
-                        formatter: '{c}'
-                    }
-                }
-            }
-        },
-    ]
-}; 
-columnar2.setOption(option);
-})();
 
 (function(){
 	
@@ -133,7 +67,7 @@ var sug1 = echarts.init(document.getElementById("sug1"));
           itemHeight: 12,
           orient: 'vertical',
           left: 'right',
-          data: ['预计节省目标', '实际节约电量'],
+          data: ['Expect Savage Goal', 'Actual Savage'],
           textStyle: {
               color: 'black'
           }
@@ -164,24 +98,24 @@ var sug1 = echarts.init(document.getElementById("sug1"));
               }
           },
           indicator: [{
-              name: '照明',
+              name: 'Clothe Washer',
               max: 100
           }, {
-              name: '电冰箱',
+              name: 'Tap in Kitchen',
               max: 100
           }, {
-              name: '电视机',
+              name: 'Tap in Balcony',
               max: 100
           }, {
-              name: '插座',
+              name: 'Dish Washer',
               max: 100
           }, {
-              name: '空调',
+              name: 'Tap in Bashroom',
               max: 100
           }]
       },
       series: [{
-          name: '预算 vs 开销（Budget vs spending）',
+          name: 'Goal vs spending',
           type: 'radar',
           symbolSize: 0,
           areaStyle: {
@@ -195,10 +129,10 @@ var sug1 = echarts.init(document.getElementById("sug1"));
           },
           data: [{
               value: [50, 70, 12, 61, 15],
-              name: '预计节省目标',
+              name: 'Expect Savage Goal',
           }, {
               value: [28, 68, 20, 85, 12],
-              name: '实际节约电量',
+              name: 'Actual Savage',
           }]
       }],
       color: ['#ef4b4c', '#b1eadb'],

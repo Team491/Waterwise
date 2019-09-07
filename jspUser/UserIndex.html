@@ -37,7 +37,7 @@
                            
                         </form>
                     </li>
-                    <li><h4><a href="../jsp/login.html" style="color:">&nbsp;&nbsp;&nbsp;退出登录</a></h4></li>
+                    <li><h4><a href="../jsp/login.html" style="color:">&nbsp;&nbsp;&nbsp;Log out</a></h4></li>
 				</ul>
 			</div>
 		</header>
@@ -64,31 +64,29 @@
 	                    </div>
 	                    <!-- End User -->
 	            
-						  <ul class="am-list admin-sidebar-list">
-						    <li><a href="UserIndex.html"><span class="am-icon-home"></span> 首页</a></li>
-						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-table"></span> Facility Report <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
-						        <li><a href="realtime.html">Overall Water Facility Data</a></li>
-								<li><a href="Appliance.html">Facility Water Data</a></li>
-						      </ul>
-						    </li>
-						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="am-icon-line-chart" aria-hidden="true"></i> Water Usage Evaluation <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
-						        <li><a href="ReportDay.html" class="am-cf"> 日度报告</span></a></li>
-						        <li><a href="ReportMon.html" class="am-cf"> 月度报告</span></a></li>
-						        <li><a href="ReportYear.html" class="am-cf"> 年度报告</span></a></li>
-						      </ul>
-						    </li>
-						    <li class="admin-parent">
-						      <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> 节能策略 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-						      <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
-						        <li><a href="Suggestion.html" class="am-cf">用电建议 </a></li>
-						        <li><a href="PriceStrategy.html">电价策略选择</a></li>   
-						      </ul>
-						    </li>
-						  </ul>
+						<ul class="am-list admin-sidebar-list">
+						<li><a href="UserIndex.html"><span class="am-icon-home"></span> Home Page</a></li>
+						<li class="admin-parent">
+							<a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}" href="realtime.html"><span class="am-icon-table"></span> Dashboard <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+							<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="am-icon-line-chart" aria-hidden="true"></i> Peer Evaluation <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+							<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
+							<li><a href="ReportDay.html" class="am-cf"> Neighbour Evaluation</span></a></li>
+							<li><a href="ReportMon.html" class="am-cf"> Self-evaluation</span></a></li>
+							<li><a href="ReportYear.html" class="am-cf"> Yearly Evaluation</span></a></li>
+							</ul>
+						</li>
+						<li class="admin-parent">
+							<a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> Water Strategy Recommendation <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+							<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
+							<li><a href="Suggestion.html" class="am-cf">Water Usage Strategy </a></li>
+							<li><a href="PriceStrategy.html">Water PriceStrategy</a></li>   
+							</ul>
+						</li>
+						</ul>
 				</div>
 				  </div>
 				  <!-- sidebar end -->
@@ -110,119 +108,115 @@
 			<!-- Start content -->
 			<div class="content">
 				<div class="am-g">
-					
-						<div class="am-u-md-6">
+					<div class="am-u-md-9">
 						<!-- 大数据面积图  -->
 						<div class="card-box">
 							<div  id="columnar3" style=";height: 300px;"></div>
 						</div>
-					    </div>
-					
-					 <div class="am-u-md-4">
+					</div>
+					 <div class="am-u-md-3">
 						<!-- 大数据面积图  -->
 						<div class="card-box">
-							<div  id="columnar2" style=";height: 300px;"></div>
-						</div>
-					 </div>
-					 <div class="am-u-md-2">
-						<!-- 大数据面积图  -->
-						<div class="card-box">
-								<h4 class="header-title m-t-0 m-b-30">你的表现:</h4>
-								<div class="inbox-widget nicescroll" style="height: 255px; overflow: hidden; outline: none;" tabindex="5000">
-                                    <a href="#">
-                                        <div class="inbox-item">
-                                        	<p class="inbox-item-author">很好</p>
-                                            <div class="inbox-item-img"><img src="../assets/img/smile1.png" class="img-circle" alt=""></div>
-                                            <div class="inbox-item-img"><img src="../assets/img/smile1.png" class="img-circle" alt=""></div>
-                                            
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="inbox-item">
-                                        	 <p class="inbox-item-author">一般</p>
-                                            <div class="inbox-item-img"><img src="../assets/img/smile2.png" class="img-circle" alt=""></div>
-                                           
-                                            
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="inbox-item">
-                                            
-                                            <p class="inbox-item-author">较差!</p>
-                                            
-                                        </div>
-                                    </a>
-                                      
-                                </div>
+							<h4 class="header-title m-t-0 m-b-30">Your Performance:</h4>
+							<div class="inbox-widget nicescroll" style="height: 255px; overflow: hidden; outline: none;" tabindex="5000">
+								<a href="#">
+									<div class="inbox-item">
+										<p class="inbox-item-author">Very Good!!</p>
+										<div class="inbox-item-img"><img src="../assets/img/smile1.png" class="img-circle" alt=""></div>
+										<div class="inbox-item-img"><img src="../assets/img/smile1.png" class="img-circle" alt=""></div>
+										
+									</div>
+								</a>
+								<a href="#">
+									<div class="inbox-item">
+											<p class="inbox-item-author"></p>
+										<div class="inbox-item-img"><img src="../assets/img/smile2.png" class="img-circle" alt=""></div>
+										
+										
+									</div>
+								</a>
+								<a href="#">
+									<div class="inbox-item">
+										
+										<p class="inbox-item-author">Thank you! You have made the world better</p>
+										
+									</div>
+								</a>
+									
 							</div>
+						</div>
 					</div>		
 				</div><!-- am-g -->
-				
-				<div class="am-g">
-					<!-- Row start -->
-					<div class="am-u-md-4">
-						<div class="card-box">
-						<h4 class="header-title m-t-0 m-b-30">上月：<small class="text-info">省电达标</small></h4>
-						<hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:15)" width="100%" color=#987cb9 SIZE=1> 
 
-							<div  id="sug1" style="height: 300px;"></div>
+				<div class="am-g">
+					
+						<div class="am-u-md-4">
+							<div class="card-box">
+							<h4 class="header-title m-t-0 m-b-30">Achieve your Goal?</h4>
+							<hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:15)" width="100%" color=#987cb9 SIZE=1> 
+	
+								<div  id="sug1" style="height: 300px;"></div>
+							</div>
+						</div>
+						
+						<div class="am-u-md-8">
+							<div class="card-box">
+							<h4 class="header-title m-t-0 m-b-30">Overall Evaluation <img src="../assets/img/smile1.png" class="img-circle"  height="27" width="27"> (Very Good)</h4>
+							<hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:'black',direction:145,strength:15)" width="100%" color=#987cb9 SIZE=1> 
+								<div style="height: 290px;">
+									<h5 class="header-title m-t-0 m-b-30">You have saved 18 dollar, and already planted 4 trees near riverbed!</h5>
+									<table class="am-table   am-text-nowrap">
+												<thead>
+												<tr>
+													<th>#</th>
+													<th>Facility</th>
+													<th>Saved Water(t)</th>
+													<th>Saved Money($)</th>
+													<th>Got the goal</th>
+												</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td>Clothe Washer</td>
+														<td>0.4</td>
+														<td>4</td>
+														<td><span class="label label-danger">No</span></td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>Tap in Kitchen</td>
+														<td>0.3</td>
+														<td>4</td>
+														<td><span class="label label-success">Yes</span></td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>Tap in Balcony</td>
+														<td>2</td>
+														<td>2</td>
+														<td><span class="label label-danger">No</span></td>
+													</tr>
+													<tr>
+														<td>4</td>
+														<td>Dish Washer</td>
+														<td>6</td>
+														<td>8</td>
+														<td><span class="label label-success">Yes</span></td>
+													</tr>
+													<tr>
+														<td>5</td>
+														<td>Tap in Bashroom</td>
+														<td>8</td>
+														<td>7</td>
+														<td><span class="label label-success">Yes</span></td>
+													</tr>     
+												</tbody>
+										</table>
+								</div>
+							</div>
 						</div>
 					</div>
-					
-					
-					<div class="am-u-md-8">
-						<!-- 大数据面积图  -->
-						<div class="card-box">
-							<div id="pie3" style="height: 365px; "></div>
-						</div>
-					</div>
-					<!-- Row end -->
-				</div>
-				
-							<div class="am-g">
-					<!-- Row start -->
-						<div class="am-u-md-4">
-							<div class="card-box widget-user">
-                                <div>
-                                    <img src="../assets/img/avatar-3.jpg" class="img-responsive img-circle" alt="user">
-                                    <div class="wid-u-info">
-                                        <h4 class="m-t-0 m-b-5 font-600">用户134****1098</h4>
-                                        <p class="text-muted m-b-5 font-13">选择了月度A套餐</p>
-                                    </div>
-                                </div>
-                            </div>
-						</div>
-						<!-- col end -->
-						<div class="am-u-md-4">
-							<div class="card-box widget-user">
-                                <div>
-                                    <img src="../assets/img/avatar-2.jpg" class="img-responsive img-circle" alt="user">
-                                    <div class="wid-u-info">
-                                        <h4 class="m-t-0 m-b-5 font-600">用户187****1918</h4>
-                                        <p class="text-muted m-b-5 font-13">选择了日结B套餐</p>
-                                    </div>
-                                </div>
-                            </div>
-						</div>
-						<!-- col end -->
-						<div class="am-u-md-4">
-							<div class="card-box widget-user">
-                                <div>
-                                    <img src="../assets/img/avatar-4.jpg" class="img-responsive img-circle" alt="user">
-                                    <div class="wid-u-info">
-                                        <h4 class="m-t-0 m-b-5 font-600">用户157****6403</h4>
-                                        <p class="text-muted m-b-5 font-13">选择了日结A套餐</p>
-                                    </div>
-                                </div>
-                            </div>
-			</div>
-					
-					<!-- Row start -->
-					
-				
-			
-				
-			</div>
 		</div>
 		<!-- end right Content here -->
 		<!--</div>-->
