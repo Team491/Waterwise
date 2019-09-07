@@ -4,8 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ReportMon</title>
-
+	<title>UserIndex</title>
 	<link rel="stylesheet" href="../assets/css/amazeui.css" />
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../assets/css/core.css" />
@@ -13,10 +12,9 @@
 	<link rel="stylesheet" href="../assets/css/index.css" />
 	<link rel="stylesheet" href="../assets/css/admin.css" />
 	<link rel="stylesheet" href="../assets/css/page/typography.css" />
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="../assets/css/page/form.css" />
 	<link rel="stylesheet" href="../assets/css/component.css" />
-	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
-
 </head>
 
 <body>
@@ -30,53 +28,80 @@
 		<div class="contain">
 			<ul class="am-nav am-navbar-nav am-navbar-left">
 
-				<li>
-					<h4 class="page-title"></h4>
-				</li>
+				<!--<li><h4 class="page-title">柱状图</h4></li>-->
 			</ul>
 
 			<ul class="am-nav am-navbar-nav am-navbar-right">
 				<li class="inform"><i class="am-icon-bell-o" aria-hidden="true"></i></li>
 				<li class="hidden-xs am-hide-sm-only">
 					<form role="search" class="app-search">
-						<input type="text" value="2016" class="form-control">
-						<a href=""><img src="../assets/img/search.png"></a>
+						<input placeholder="2017-09-17" class="form-control">
+
 					</form>
 				</li>
 				<li>
-					<h4><a href="../jsp/login.html" style="color:">&nbsp;&nbsp;&nbsp;退出登录</a></h4>
+					<h4><a href="../jsp/login.html" style="color:">&nbsp;&nbsp;&nbsp;Log out</a></h4>
 				</li>
 			</ul>
 		</div>
-		<!-- End User -->
+	</header>
+	<!-- end page -->
 
-		<ul class="am-list admin-sidebar-list">
-			<li><a href="UserIndex.html"><span class="am-icon-home"></span> Home Page</a></li>
-			<li class="admin-parent">
-				<a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-table"></span> Dashboard <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-				<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
-					<li><a href="FacilityDashboard.html" class="am-cf"> Facility Dashboard</span></a></li>
-					<li><a href="DailyDashboard.html" class="am-cf"> Daily Dashboard</span></a></li>
+
+	<div class="admin">
+		<!--<div class="am-g">-->
+		<!-- ========== Left Sidebar Start ========== -->
+		<!--<div class="left side-menu am-hide-sm-only am-u-md-1 am-padding-0">
+			<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 548px;">
+				<div class="sidebar-inner slimscrollleft" style="overflow: hidden; width: auto; height: 548px;">-->
+		<!-- sidebar start -->
+		<div class="admin-sidebar am-offcanvas  am-padding-0" id="admin-offcanvas">
+			<div class="am-offcanvas-bar admin-offcanvas-bar">
+				<!-- User -->
+				<div class="user-box am-hide-sm-only">
+					<div class="user-img">
+						<img src="../assets/img/yonghu.png" alt="user-img" title="Mat Helme"
+							class="img-circle img-thumbnail img-responsive">
+						<div class="user-status offline"><i class="am-icon-dot-circle-o" aria-hidden="true"></i></div>
+					</div>
+					<h5><a href="#">1202276938</a> </h5>
+
+				</div>
+				<!-- End User -->
+
+				<ul class="am-list admin-sidebar-list">
+					<li><a href="UserIndex.html"><span class="am-icon-home"></span> Home Page</a></li>
+					<li class="admin-parent">
+						<a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span
+								class="am-icon-table"></span> Dashboard <span
+								class="am-icon-angle-right am-fr am-margin-right"></span></a>
+						<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
+							<li><a href="FacilityDashboard.html" class="am-cf"> Facility Dashboard</span></a></li>
+							<li><a href="DailyDashboard.html" class="am-cf"> Daily Dashboard</span></a></li>
+						</ul>
+					</li>
+					<li class="admin-parent">
+						<a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="am-icon-line-chart"
+								aria-hidden="true"></i> Peer Evaluation <span
+								class="am-icon-angle-right am-fr am-margin-right"></span></a>
+						<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
+							<li><a href="ReportDay.html" class="am-cf"> Neighbour Evaluation</span></a></li>
+							<li><a href="ReportMon.html" class="am-cf"> Self-evaluation</span></a></li>
+							<li><a href="ReportYear.html" class="am-cf"> Yearly Evaluation</span></a></li>
+						</ul>
+					</li>
+					<li class="admin-parent">
+						<a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span
+								class="am-icon-file"></span> Water Strategy Recommendation <span
+								class="am-icon-angle-right am-fr am-margin-right"></span></a>
+						<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
+							<li><a href="Suggestion.html" class="am-cf">Water Usage Strategy </a></li>
+							<li><a href="PriceStrategy.html">Water PriceStrategy</a></li>
+						</ul>
+					</li>
 				</ul>
-			</li>
-			<li class="admin-parent">
-				<a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="am-icon-line-chart" aria-hidden="true"></i> Peer Evaluation <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-				<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
-				<li><a href="ReportDay.html" class="am-cf"> Neighbour Evaluation</span></a></li>
-				<li><a href="ReportMon.html" class="am-cf"> Self-evaluation</span></a></li>
-				<li><a href="ReportYear.html" class="am-cf"> Yearly Evaluation</span></a></li>
-				</ul>
-			</li>
-			<li class="admin-parent">
-				<a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> Water Strategy Recommendation <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-				<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
-				<li><a href="Suggestion.html" class="am-cf">Water Usage Strategy </a></li>
-				<li><a href="PriceStrategy.html">Water PriceStrategy</a></li>   
-				</ul>
-			</li>
-		</ul>
-	</div>
-</div>
+			</div>
+		</div>
 
 	<div class="content-page">
 		<!-- Start content -->
