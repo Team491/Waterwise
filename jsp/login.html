@@ -1,0 +1,63 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <base href="<%=basePath%>"> 
+  <title>login</title>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/supersized.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+
+    <script src="../js/jquery-1.8.2.min.js"></script>
+    <script src="../js/supersized.3.2.7.min.js"></script>
+    <script src="../js/supersized-init.js"></script>
+    <script src="../js/scripts.js"></script>
+    
+    <script language="javascript" type="text/javascript" src="../js/checklogin.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    
+  </head>
+  
+  <body>
+   <div class="page-container">
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <h1>智慧能源管理系统</h1>
+        <input type="text" id="user" name="user" placeholder="用户名"></br>
+        <input type="password" id="pwd" id="pwd" placeholder="密码">   
+		<br/>
+        <br>
+        <button type="submit" onclick="login()">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+   </div>
+ </body>
+
+
+<!-- if(user=="admin" && pwd=="123")-->
+</html>
+<script>
+function login(){
+var pwd=document.getElementById('pwd').value;
+var user=document.getElementById('user').value;
+if(user=="user" && pwd=="123"){
+window.location.href="../jspUser/UserIndex.html"
+//你的操作;
+}
+else if(user=="admin" && pwd=="123"){
+window.location.href="../jspDLGS/DLGSIndex.html"
+}
+else{
+alert("用户名或密码错误");
+}
+}</script>
