@@ -14,11 +14,8 @@ option = {
         },
          grid:{
             x:'4%',
-         /*x2:'80%',
-            y2:'1%'*/
         },
         xAxis: [{
-            
             name:'t',
             axisLine: {
                 show: false,
@@ -48,7 +45,7 @@ option = {
             type: 'value',
             type: 'category',
             inverse: true,
-            position: 'left',
+            position: 'right',
             axisLine: {
                 show: false,
             },
