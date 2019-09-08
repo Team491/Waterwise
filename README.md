@@ -7,7 +7,7 @@ Team Members:
 - Shanyue Wan
 - Xinrui Zheng
 - Wenbo Liu
-- Zoe
+- Zoe Kwan
 - Lei Ding
 - Hao Chen
 - Wenye Li
