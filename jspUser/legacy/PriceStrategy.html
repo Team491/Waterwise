@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ReportYear</title>
+	<title>PriceStrategy</title>
 	<link rel="stylesheet" href="../assets/css/amazeui.css" />
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../assets/css/core.css" />
@@ -13,8 +13,41 @@
 	<link rel="stylesheet" href="../assets/css/admin.css" />
 	<link rel="stylesheet" href="../assets/css/page/typography.css" />
 	<link rel="stylesheet" href="../assets/css/page/form.css" />
+	<link rel="stylesheet" href="../assets/css/page/form.css" />
 	<link rel="stylesheet" href="../assets/css/component.css" />
 	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="../css/button.css" />
+
+	<script LANGUAGE="JavaScript">
+
+		function openwin() {
+			var height = 400;
+			var width = 700;
+			var top = Math.round((window.screen.height - height) / 2);
+			var left = Math.round((window.screen.width - width) / 2);
+			window.open("../html/jieti.html", "newwindow", "height=" + height + ", width=" + width + ",top=" + top + ", left=" + left + ", toolbar =no, menubar=no, scrollbars=no, resizable=no, location=no, status=no") //写成一行  
+		}
+
+		function openwin1() {
+			var height = 400;
+			var width = 900;
+			var top = Math.round((window.screen.height - height) / 2);
+			var left = Math.round((window.screen.width - width) / 2);
+			window.open("../html/jianfeng.html", "newwindow", "height=" + height + ", width=" + width + ",top=" + top + ", left=" + left + ", toolbar =no, menubar=no, scrollbars=no, resizable=no, location=no, status=no") //写成一行  
+		}
+
+	</script>
+	<script type="text/javascript">
+		function disp_alert() {
+			alert("是否选择阶梯电价")
+		}
+	</script>
+	<script type="text/javascript">
+		function disp_alert1() {
+			alert("是否选择尖峰电价")
+		}
+	</script>
+
 </head>
 
 <body>
@@ -37,8 +70,8 @@
 				<li class="inform"><i class="am-icon-bell-o" aria-hidden="true"></i></li>
 				<li class="hidden-xs am-hide-sm-only">
 					<form role="search" class="app-search">
-						<input type="text" value="2016" class="form-control">
-						<a href=""><img src="../assets/img/search.png"></a>
+						<input type="text" placeholder="" class="form-control">
+
 					</form>
 				</li>
 				<li>
@@ -67,21 +100,9 @@
 						<div class="user-status offline"><i class="am-icon-dot-circle-o" aria-hidden="true"></i></div>
 					</div>
 					<h5><a href="#">1202276938</a> </h5>
-					<ul class="list-inline">
-						<li>
-							<a href="#">
-								<i class="am-icon-cog" aria-hidden="true"></i>
-							</a>
-						</li>
-
-						<li>
-							<a href="#" class="text-custom">
-								<i class="am-icon-cog" aria-hidden="true"></i>
-							</a>
-						</li>
-					</ul>
 				</div>
 				<!-- End User -->
+
 				<ul class="am-list admin-sidebar-list">
 					<li><a href="UserIndex.html"><span class="am-icon-home"></span> 首页</a></li>
 					<li class="admin-parent">
@@ -128,90 +149,119 @@
 		<!-- ============================================================== -->
 		<!-- Start right Content here -->
 		<div class="content-page">
-
+			<!-- Start content -->
 			<div class="content">
 				<div class="am-g">
 
 					<div class="am-u-md-8">
 						<!-- 大数据面积图  -->
 						<div class="card-box">
-							<div id="pie1" style="height: 300px;"></div>
-						</div>
-					</div>
+							<h4 class="header-title m-t-0 m-b-30">最新项目</h4>
+							<div class="am-scrollable-horizontal am-text-ms" style="font-family:arial;">
+								<table class="am-table   am-text-nowrap">
+									<thead>
+										<tr>
+											<th>编号</th>
+											<th>套餐类型</th>
+											<th>业务详情</th>
+											<th>选择</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>阶梯电价</td>
+											<td><a href="#" onclick="openwin()">详情</a></td>
+											<td>
+												<input type="submit" value="选择"
+													class="button button-pill button-primary" onclick="disp_alert()">
 
-					<div class="am-u-md-4">
-						<!-- 大数据面积图  -->
-						<div class="card-box">
-							<div id="pie2" style="height: 300px; "></div>
-						</div>
-					</div>
+											</td>
 
-				</div>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>实时电价A</td>
+											<td><a href="" target="_blank">详情</a></td>
+											<td>
+												<input type="submit" value="选择"
+													class="button button-pill button-primary">
 
-				<div class="am-g">
+											</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>实时电价B</td>
+											<td><a href="" target="_blank">详情</a></td>
+											<td>
+												<input type="submit" value="选择"
+													class="button button-pill button-primary">
+											</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>实时电价C</td>
+											<td><a href="" target="_blank">详情</a></td>
+											<td>
+												<input type="submit" value="选择"
+													class="button button-pill button-primary">
+											</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>分时电价A</td>
+											<td><a href="" target="_blank">详情</a></td>
+											<td>
+												<input type="submit" value="选择"
+													class="button button-pill button-primary">
+											</td>
+										</tr>
 
-					<div class="am-u-md-8">
-						<!-- 大数据面积图  -->
-						<div class="card-box">
-							<div id="pie3" style="height: 400px; "></div>
-						</div>
-					</div>
+										<tr>
+											<td>6</td>
+											<td>分时电价B</td>
+											<td><a href="" target="_blank">详情</a></td>
+											<td>
+												<input type="submit" value="选择"
+													class="button button-pill button-primary">
+											</td>
+										</tr>
 
-					<div class="am-u-md-4">
-						<div class="card-box">
-							<h4 class="header-title m-t-0 m-b-30">2017.9.6家用电器用电情况</h4>
-							<div class="inbox-widget nicescroll" style="height: 355px; overflow: hidden; outline: none;"
-								tabindex="5000">
-								<a href="#">
-									<div class="inbox-item">
-										<div class="inbox-item-img"><img src="../assets/img/tv-1.png" class="img-circle"
-												alt=""></div>
-										<p class="inbox-item-author">电视机</p>
-										<p class="inbox-item-text">348.6kW·h</p>
-										<p class="inbox-item-date">174.3元</p>
-									</div>
-								</a>
-								<a href="#">
-									<div class="inbox-item">
-										<div class="inbox-item-img"><img src="../assets/img/refrigerator.png"
-												class="img-circle" alt=""></div>
-										<p class="inbox-item-author">电冰箱</p>
-										<p class="inbox-item-text">697.2kW·h</p>
-										<p class="inbox-item-date">348.6元</p>
-									</div>
-								</a>
-								<a href="#">
-									<div class="inbox-item">
-										<div class="inbox-item-img"><img src="../assets/img/aircon.png"
-												class="img-circle" alt=""></div>
-										<p class="inbox-item-author">空调</p>
-										<p class="inbox-item-text">1568.7kW·h</p>
-										<p class="inbox-item-date">784.35元</p>
-									</div>
-								</a>
-								<a href="#">
-									<div class="inbox-item">
-										<div class="inbox-item-img"><img src="../assets/img/washer-1.png"
-												class="img-circle" alt=""></div>
-										<p class="inbox-item-author">洗衣机</p>
-										<p class="inbox-item-text">418.32kW·h</p>
-										<p class="inbox-item-date">209.16元</p>
-									</div>
-								</a>
-								<a href="#">
-									<div class="inbox-item">
-										<div class="inbox-item-img"><img src="../assets/img/lighting-2.png"
-												class="img-circle" alt=""></div>
-										<p class="inbox-item-author">照明</p>
-										<p class="inbox-item-text">453.18kW·h</p>
-										<p class="inbox-item-date">226.59元</p>
-									</div>
-								</a>
+										<tr>
+											<td>7</td>
+											<td>分时电价C</td>
+											<td><a href="" target="_blank">详情</a></td>
+											<td>
+												<input type="submit" value="选择"
+													class="button button-pill button-primary">
+											</td>
+										</tr>
+
+										<tr>
+											<td>8</td>
+											<td>尖峰电价</td>
+											<td><a href="" target="_blank" onclick="openwin1()">详情</a></td>
+											<td>
+												<input type="submit" value="选择"
+													class="button button-pill button-primary" onclick="disp_alert1()">
+											</td>
+										</tr>
+
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
+					<div class="am-u-md-4">
+						<!-- 大数据面积图  -->
+						<div class="card-box">
+							
+						</div>
+					</div>
 
 				</div>
+
+
 
 
 			</div>
@@ -232,12 +282,7 @@
 	<script type="text/javascript" src="../assets/js/blockUI.js"></script>
 	<script type="text/javascript" src="../assets/js/charts/echarts.min.js"></script>
 	<script type="text/javascript" src="../assets/js/charts/pieChart.js"></script>
-	<script type="text/javascript">
-		$('#s').input({
-			lang: "ch", //语言选择中文 注：旧版本 新版方法：$.datetimepicker.setLocale('ch');
-			format: "Y"     //格式化日期
 
-		});</script>
 </body>
 
 </html>

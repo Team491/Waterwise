@@ -34,12 +34,15 @@
   <body>
    <div class="page-container">
     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <h1>智慧能源管理系统</h1>
-        <input type="text" id="user" name="user" placeholder="用户名"></br>
-        <input type="password" id="pwd" id="pwd" placeholder="密码">   
+      <div class="am-topbar-left am-hide-sm-only">
+        <a class="logo"><img src="../assets/img/icon-transparent.jpg"
+            style="width: 20%; height: 20%" /></a>
+      </div>
+        <input type="text" id="user" name="user" placeholder="Username" style="color: black"></br>
+        <input type="password" id="pwd" id="pwd" placeholder="Password" style="color: black">   
 		<br/>
         <br>
-        <button type="submit" onclick="login()">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+        <button type="submit" onclick="login()">Log&nbsp;&nbsp;in</button>
    </div>
  </body>
 
@@ -58,6 +61,6 @@ else if(user=="admin" && pwd=="123"){
 window.location.href="../jspDLGS/DLGSIndex.html"
 }
 else{
-alert("用户名或密码错误");
+alert("Password Incorrect");
 }
 }</script>

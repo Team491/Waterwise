@@ -77,7 +77,7 @@ option = {
         trigger: 'axis'
     },
     legend: {
-        data:['Clothe Washer','Tap in Kitchen','Water Usage','Tap in Balcony','Dish Washer']
+        data:['Laundry Machine','Tap in Kitchen','Water Usage','Tap in Balcony','Dish Washer']
     },
     grid: {
         left: '3%',
@@ -105,7 +105,7 @@ option = {
     },
     series: [
         {
-            name:'Clothe Washer',
+            name:'Laundry Machine',
             type:'line',
             stack: 'total',
             data:[, , , , , , , , , , , , , 0.24, 0.24, 0.24, , , , , , , , , , , , , , , , , , , , , 0.24, 0.24, 0.24, , , , , , , , , ]

@@ -1,88 +1,88 @@
 /*----------------------sug-----------------------*/
 //环形图
 (function(){
-	
+
 var sug1 = echarts.init(document.getElementById("sug1"));
 
-   var option = {
-      tooltip: {},
-      legend: {
-          top: 20,
-          itemWidth: 12,
-          itemHeight: 12,
-          orient: 'vertical',
-          left: 'right',
-          data: ['预计节省目标', '实际节约电量'],
-          textStyle: {
-              color: 'black'
-          }
-      },
-      radar: {
-          radius: '50%',
-          splitNumber: 8,
-          axisLine: {
-              lineStyle: {
-                  color: 'black',
-                  opacity: .2
-              }
-          },
-          splitLine: {
-              lineStyle: {
-                  color: 'black',
-                  opacity: .2
-              }
-          },
-          splitArea: {
-              areaStyle: {
-                  color: 'rgba(127,95,132,.3)',
-                  opacity: 1,
-                  shadowBlur: 45,
-                  shadowColor: 'rgba(0,0,0,.5)',
-                  shadowOffsetX: 0,
-                  shadowOffsetY: 15,
-              }
-          },
-          indicator: [{
-              name: '照明',
-              max: 10
-          }, {
-              name: '电冰箱',
-              max: 10
-          }, {
-              name: '电视机',
-              max: 10
-          }, {
-              name: '洗衣机',
-              max: 10
-          }, {
-              name: '空调',
-              max: 10
-          }]
-      },
-      series: [{
-          name: '预算 vs 开销（Budget vs spending）',
-          type: 'radar',
-          symbolSize: 0,
-          areaStyle: {
-              normal: {
-                  shadowBlur: 13,
-                  shadowColor: 'rgba(0,0,0,.2)',
-                  shadowOffsetX: 0,
-                  shadowOffsetY: 10,
-                  opacity: 1
-              }
-          },
-          data: [{
-              value: [5, 7, 2, 6, 5],
-              name: '预计节省目标',
-          }, {
-              value: [2, 6, 2, 8, 6],
-              name: '实际节约电量',
-          }]
-      }],
-      color: ['#ef4b4c', '#b1eadb'],
-      
-  };
+    var option = {
+        tooltip: {},
+        legend: {
+            top: 20,
+            itemWidth: 12,
+            itemHeight: 12,
+            orient: 'vertical',
+            left: 'right',
+            data: ['Expect Savage Goal', 'Actual Savage'],
+            textStyle: {
+                color: 'black'
+            }
+        },
+        radar: {
+            radius: '50%',
+            splitNumber: 8,
+            axisLine: {
+                lineStyle: {
+                    color: 'black',
+                    opacity: .2
+                }
+            },
+            splitLine: {
+                lineStyle: {
+                    color: 'black',
+                    opacity: .2
+                }
+            },
+            splitArea: {
+                areaStyle: {
+                    color: 'rgba(127,95,132,.3)',
+                    opacity: 1,
+                    shadowBlur: 45,
+                    shadowColor: 'rgba(0,0,0,.5)',
+                    shadowOffsetX: 0,
+                    shadowOffsetY: 15,
+                }
+            },
+            indicator: [{
+                name: 'Laundry Machine',
+                max: 100
+            }, {
+                name: 'Tap in Kitchen',
+                max: 100
+            }, {
+                name: 'Tap in Balcony',
+                max: 100
+            }, {
+                name: 'Dish Washer',
+                max: 100
+            }, {
+                name: 'Tap in Bashroom',
+                max: 100
+            }]
+        },
+        series: [{
+            name: 'Goal vs spending',
+            type: 'radar',
+            symbolSize: 0,
+            areaStyle: {
+                normal: {
+                    shadowBlur: 13,
+                    shadowColor: 'rgba(0,0,0,.2)',
+                    shadowOffsetX: 0,
+                    shadowOffsetY: 10,
+                    opacity: 1
+                }
+            },
+            data: [{
+                value: [50, 70, 12, 61, 15],
+                name: 'Expect Savage Goal',
+            }, {
+                value: [28, 68, 20, 85, 12],
+                name: 'Actual Savage',
+            }]
+        }],
+        color: ['#ef4b4c', '#b1eadb'],
+        
+    };
 
 sug1.setOption(option);
 })();
