@@ -42,10 +42,10 @@ option = {
     series : [
        
         {
-            name:'搜索引擎',
+            name:'Comsumption Amount',
             type:'line',
-            stack: '总量',
-            itemStyle: {normal: {areaStyle: {type: 'K·Wh'}}},
+            stack: '',
+            itemStyle: {normal: {areaStyle: {type: 'Comsumption Amount'}}},
             data:[5.3, 2.98, 11.97, 14.45, 5.71, 21.24, 6.88, 3.96, 5.98, 2.69, 5.02, 5.48, 5.55, 3.38, 2.75, 4.24, 2.83, 4.01, 1.82, 2.82, 2.54, 3.81, 7.02, 5.29, 7.05, 3.86, 4.51, 3.79, 3.68, 4.34, 3.72]
         }
     ]
@@ -98,7 +98,7 @@ var sug1 = echarts.init(document.getElementById("sug1"));
               }
           },
           indicator: [{
-              name: 'Clothe Washer',
+              name: 'Laundry Machine',
               max: 100
           }, {
               name: 'Tap in Kitchen',

@@ -43,7 +43,7 @@ var sug1 = echarts.init(document.getElementById("sug1"));
                 }
             },
             indicator: [{
-                name: 'Clothe Washer',
+                name: 'Laundry Machine',
                 max: 100
             }, {
                 name: 'Tap in Kitchen',
