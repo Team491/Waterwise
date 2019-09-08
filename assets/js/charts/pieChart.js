@@ -6,7 +6,7 @@ var neighbourComparing = echarts.init(document.getElementById("neighbourComparin
 option = {
     backgroundColor:'white',
         title: {
-            text: 'Neighbour Comparing',
+            text: 'Neighbour Comparing ( Unit : t )',
            
             textStyle: {
                 color: 'black'
@@ -16,7 +16,7 @@ option = {
             x:'4%',
         },
         xAxis: [{
-            name:'t',
+            // name:'t',
             axisLine: {
                 show: false,
             },
