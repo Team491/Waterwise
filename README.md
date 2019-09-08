@@ -1,4 +1,4 @@
-# Energy-X
+# Waterwise
 This project belongs to team 491 of GovHack 2019, aimed to optimize water comsumption in Australia.
 
 Team Members:
